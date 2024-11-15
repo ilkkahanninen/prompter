@@ -118,18 +118,13 @@ const adjective = words`
     a calm
     a charming
     a clever
-    a cold
     a colorful
-    a creative
     a curious
     a dangerous
     a dark
-    a delicate
     a delicious
     a dizzy
     a dramatic
-    an easy
-    an efficient
     an elegant
     an energetic
     an enthusiastic
@@ -137,7 +132,6 @@ const adjective = words`
     an expensive
     a famous
     a fast
-    a fierce
     a friendly
     a generous
     a gentle
@@ -145,139 +139,59 @@ const adjective = words`
     a graceful
     a happy
     a hardworking
-    a harsh
-    a healthy
     a heavy
     a helpful
-    a honest
     a horrible
     a hot
-    a humble
     a hungry
     an important
     an incredible
     an intelligent
-    an interesting
     a jealous
     a joyful
-    a kind
     a lazy
-    a light
-    a lonely
-    a loud
     a lucky
     a magical
     a mysterious
-    a narrow
-    a neat
     a nervous
-    a noisy
     an old
-    an optimistic
-    an organized
-    a passionate
-    a peaceful
     a playful
-    a powerful
-    a proud
-    a quick
-    a quiet
-    a rare
-    a realistic
-    a reliable
     a rich
     a romantic
-    a rough
-    a safe
     a scary
-    a sensitive
-    a serious
     a shiny
     a short
-    a silent
-    a simple
     a skinny
     a slow
     a smart
-    a smooth
-    a soft
     a strong
-    a sweet
-    a talented
     a tall
     a terrible
     a tiny
     a tough
     an ugly
     an unique
-    a warm
-    a wise
 `;
 
-const namedPlace = words`
-    paris
-    tokyo
-    new york
-    london
-    sydney
-    rome
-    beijing
-    cairo
-    berlin
-    moscow
-    venice
-    dubai
-    rio de janeiro
-    barcelona
-    los angeles
-    istanbul
-    amsterdam
-    bangkok
-    athens
-    singapore
-    madrid
-    hong kong
-    mexico city
-    buenos aires
-    cape town
-    toronto
-    san francisco
-    delhi
-    seoul
-    prague
-    mumbai
-    lisbon
-    vienna
-    reykjavik
-    florence
-    zurich
-    honolulu
-    stockholm
-    dublin
-    kuala lumpur
-    helsinki
-    marrakech
-    shanghai
-    milan
-    brussels
-    lima
-    oslo
-    sydney opera house
-    grand canyon
-    eiffel tower
-    great wall of china
-    machu picchu
-    niagara falls
-    sahara desert
-    amazon rainforest
-    mount everest
-    taj mahal
-    bora bora
-    maldives
-    vatican city
-    serengeti
-    loch ness
-    badger hall
+const namedThings = words`
+    Paris
+    Tokyo
+    New York
+    London
+    Berlin
+    Moscow
+    Rio de Janeiro
+    Istanbul
+    Stockholm
+    Helsinki
+    Marrakech
+    Shanghai
+    Fortnite
+    bubblegum
+    hyper
+    afro
+    anime
+    ethnic
 `;
 
 const genericPlace = words`
@@ -345,7 +259,6 @@ const genericPlace = words`
     cabin
     ranch
     resort
-    lodge
     waterfall
     volcano
     hill
@@ -384,6 +297,8 @@ const genericPlace = words`
 `;
 
 const verb = words`
+    smells
+    tastes
     runs to
     walks to
     jumps to
@@ -415,7 +330,6 @@ const verb = words`
     closes
     lifts
     carries
-    throws
     catches
     kicks
     punches
@@ -443,11 +357,6 @@ const verb = words`
     sells
     gives
     takes
-    sends
-    receives
-    starts with
-    stops with
-    turns
     spins
     folds
     cuts
@@ -560,15 +469,12 @@ const musicStyle = words`
     disco
     punk
     heavy metal
-    alternative
-    folk
     electronic
     house
     techno
     trance
     dubstep
     ambient
-    indie rock
     synthwave
     industrial
     grunge
@@ -580,36 +486,17 @@ const musicStyle = words`
     tango
     bossa nova
     samba
-    gospel
     opera
-    chamber music
-    baroque
-    romantic
     minimalism
     avant-garde
-    experimental
     noise
     drone
-    psychedelic rock
-    progressive rock
-    new wave
-    post-punk
-    math rock
-    emo
-    trap
-    drill
     boom bap
     lo-fi
     vaporwave
     synthpop
     dream pop
-    shoegaze
     dancehall
-    afrobeats
-    afro-cuban
-    afrobeat
-    highlife
-    bollywood
     chiptune
     breakbeat
     jungle
@@ -622,18 +509,7 @@ const musicStyle = words`
     chillwave
     electro swing
     eurodance
-    bubblegum pop
-    power pop
-    glam rock
-    art rock
-    ska punk
-    thrash metal
-    death metal
-    black metal
-    doom metal
-    sludge metal
-    country rock
-    bluegrass
+    metal
 `;
 
 const venues = words`
@@ -653,11 +529,7 @@ const venues = words`
     skate parks
     rooftop terraces
     farm barns
-    vineyards
-    breweries
-    beachfront pavilions
     gardens
-    lodges
     campgrounds
     castles
     monasteries
@@ -676,6 +548,107 @@ const venues = words`
     observatories
     botanical gardens
     bowling alleys
+`;
+
+const musicalElement = words`
+    guitar
+    bassline
+    piano
+    drum machine
+    synth
+    bongo
+    handclap
+    tambourine shake
+    string
+    brass
+    violin
+    cello
+    saxophone
+    trumpet
+    flute
+    oboe
+    clarinet
+    harmonica
+    organ
+    harp
+    accordion
+    triangle
+    marimba
+    vibraphone
+    glockenspiel
+    steel drum
+    conga
+    cowbell
+    snare roll
+    cymbal
+    sub-bass
+    moog synth
+    arpeggiator pattern
+    breakbeat
+    polyrhythm
+    drone
+    key change
+    dissonance
+    slide guitar
+    power chord
+    arpeggio
+    falsetto
+    vocal
+    rap
+    beatboxing
+    scat singing
+    chanting
+    shouting
+    whisper vocal
+    spoken word
+    synth pad
+    ambient soundscape
+`;
+
+const musicalElementCont = words`
+    chaos
+    mayhem
+    section
+    part
+    ending
+    intro
+    solo
+`;
+
+const musicalAdjective = words`
+    a beautiful
+    a brave
+    a bright
+    a calm
+    a dark
+    a dizzy
+    a dramatic
+    an energetic
+    a fast
+    a gentle
+    a happy
+    a heavy
+    a horrible
+    an intelligent
+    a joyful
+    a lazy
+    a loud
+    a mysterious
+    a nervous
+    a noisy
+    a peaceful
+    a playful
+    a powerful
+    a quick
+    a quiet
+    a romantic
+    a scary
+    a simple
+    a slow
+    a smooth
+    a soft
+    a sweet
+    a terrible
 `;
 
 const pickRandom = (list) => list[Math.floor(Math.random() * list.length)];
@@ -721,29 +694,71 @@ const drawWord = async (list, mapFn = identity) => {
   }
 };
 
-const stripArticle = (w) => w.replace(/^an?\s/, "");
-
-const addWord = (word) => {
-  createPlaceholder().innerText = " " + word;
+const blinkWordIn = async (word) => {
+  const elem = createPlaceholder();
+  elem.innerText = " " + word;
+  for (let i = 0; i < 3; i++) {
+    elem.style.opacity = "100%";
+    await sleep(50);
+    elem.style.opacity = "0";
+    await sleep(50);
+  }
+  elem.style.opacity = "100%";
 };
 
+const typeWordIn = async (word) => {
+  const elem = createPlaceholder();
+  let text = " ";
+  for (let char of word.split("")) {
+    text += char;
+    elem.innerText = text;
+    await sleep(50);
+  }
+};
+
+const addWords = async (words) => {
+  const tokens = words.split(" ");
+  console.log(tokens);
+  for (let i in tokens) {
+    if (i === "0") {
+      await blinkWordIn(tokens[i]);
+    } else {
+      await typeWordIn(tokens[i]);
+    }
+  }
+};
+
+const stripArticle = (w) => w.replace(/^an?\s/, "");
+
+const capitalize = (w) => w.slice(0, 1).toUpperCase() + w.slice(1);
+
 const drawMusicPrompt = async () => {
-  await addWord("music for the");
+  await addWords("Music for the");
   await drawWord(venues);
-  await addWord("played with");
-  await drawWord(thing);
-  await addWord("– maybe with a hint of");
-  await drawWord(adjective, stripArticle);
-  await drawWord(namedPlace);
+  await addWords("with");
+  await drawWord(musicalAdjective);
+  await drawWord(musicalElement);
+  await drawWord(musicalElementCont);
+  await addWords("– and");
+  await drawWord([
+    "a hint of",
+    "a section of",
+    "a part of",
+    "occassionally appearing",
+    "a middle part of",
+    "a cursed amount of",
+  ]);
+  await drawWord(musicalAdjective, stripArticle);
+  await drawWord(namedThings);
   await drawWord(musicStyle);
 };
 
 const drawGraphicsPrompt = async () => {
-  await drawWord(adjective);
+  await drawWord(adjective, capitalize);
   await drawWord(subject);
   await drawWord(verb);
   await drawWord(adjective);
   await drawWord(thing, stripArticle);
-  await addWord("at the");
+  await addWords("at the");
   await drawWord(genericPlace);
 };
