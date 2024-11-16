@@ -173,13 +173,12 @@ const adjective = words`
     an unique
 `;
 
-const namedThings = words`
+const musicalPrefixes = words`
     Paris
     Tokyo
     New York
     London
     Berlin
-    Moscow
     Rio de Janeiro
     Istanbul
     Stockholm
@@ -192,6 +191,10 @@ const namedThings = words`
     afro
     anime
     ethnic
+    hardcore
+    deep
+    happy
+    nu
 `;
 
 const genericPlace = words`
@@ -680,6 +683,22 @@ document.body.addEventListener("keydown", (event) => {
         drawGraphicsPrompt();
       }
       return;
+    case "0":
+      if (!drawRunning) {
+        drawRunning = true;
+        showRules();
+      }
+      return;
+    case "r":
+      location.reload();
+      return;
+    case "f":
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+      return;
   }
 });
 
@@ -744,12 +763,12 @@ const drawMusicPrompt = async () => {
     "a hint of",
     "a section of",
     "a part of",
-    "occassionally appearing",
+    "an occassionally appearing",
     "a middle part of",
     "a cursed amount of",
   ]);
   await drawWord(musicalAdjective, stripArticle);
-  await drawWord(namedThings);
+  await drawWord(musicalPrefixes);
   await drawWord(musicStyle);
 };
 
@@ -761,4 +780,16 @@ const drawGraphicsPrompt = async () => {
   await drawWord(thing, stripArticle);
   await addWords("at the");
   await drawWord(genericPlace);
+};
+
+const showRules = async () => {
+  await addWords("Rules:");
+  await addWords("Each compo has an own random theme;");
+  await addWords("Following the theme is encouraged but not forced;");
+  await addWords("Maximum length 4 minutes;");
+  await addWords("Multiple entries OK;");
+  await addWords("All techniques OK;");
+  await addWords("AI in moderation is OK;");
+  await addWords("Used AI tools must be mentioned;");
+  await addWords("Submit to partyboi.app");
 };
